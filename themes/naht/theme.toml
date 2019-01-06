@@ -1,0 +1,22 @@
+name = "naht"
+license = "MIT"
+min_version = "0.53"
+tags = [
+          "portfolio",
+          "blog",
+          "responsive",
+          "personal",
+          "minimal"
+        ]
+
+features = [
+              "blog",
+              "cv",
+              "projects",
+              "contact"
+          ]
+
+
+[author]
+  name = "Zachary Carter"
+  homepage = "https://zacarter.com"
