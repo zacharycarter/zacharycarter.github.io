@@ -1,35 +1,15 @@
-.svg-icon {
-    color:inherit;
-    vertical-align:middle;
-    fill:none;
-    stroke:currentColor;
-    display:inline-block;
-    width:1rem;
-    height:1rem
-}
-
-.menu-container {
-    left:23px;
-    top:60px;
-    width:calc(100% - 46px);
-    -webkit-transform-origin:right top 0;
-    transform-origin:right top 0
-}
-
 header {
     position: relative;
     height: 640px;
     background-image: linear-gradient(config('colors.purple'), config('colors.purple-lighter'));
 }
 
-h1 {
-    padding: 100px 0;
-    font: 44px "Arial";
-    text-align: center;
-}
-
-header h1 {
-    color: white;
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 header svg {
