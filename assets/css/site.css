@@ -21,47 +21,37 @@ header svg {
 }
 
 .waves > use {
-    -webkit-animation: waveAround 60s linear infinite;
-            animation: waveAround 60s linear infinite;
+    animation: waveAround 60s linear infinite;
   }
   .waves > use:nth-child(1) {
     fill: config('colors.blue-light');
-    -webkit-animation-delay: -2s;
-            animation-delay: -2s;
+    animation-delay: -2s;
   }
   .waves > use:nth-child(2) {
     fill: config('colors.blue-lighter');
-    -webkit-animation-delay: -2s;
-            animation-delay: -2s;
-    -webkit-animation-duration: 25s;
-            animation-duration: 25s;
+    animation-delay: -2s;
+    animation-duration: 25s;
   }
   .waves > use:nth-child(3) {
     fill: config('colors.blue-lightest');
-    -webkit-animation-delay: -4s;
-            animation-delay: -4s;
-    -webkit-animation-duration: 15s;
-            animation-duration: 15s;
+    animation-delay: -4s;
+    animation-duration: 15s;
   }
   
   @-webkit-keyframes waveAround {
     0% {
-      -webkit-transform: translate(-90px, 0%);
-              transform: translate(-90px, 0%);
+        transform: translate(-90px, 0%);
     }
     100% {
-      -webkit-transform: translate(85px, 0%);
-              transform: translate(85px, 0%);
+        transform: translate(85px, 0%);
     }
   }
   
   @keyframes waveAround {
     0% {
-      -webkit-transform: translate(-90px, 0%);
-              transform: translate(-90px, 0%);
+        transform: translate(-90px, 0%);
     }
     100% {
-      -webkit-transform: translate(85px, 0%);
-              transform: translate(85px, 0%);
+        transform: translate(85px, 0%);
     }
   }
