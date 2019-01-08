@@ -1,3 +1,21 @@
+.svg-icon {
+    color:inherit;
+    vertical-align:middle;
+    fill:none;
+    stroke:currentColor;
+    display:inline-block;
+    width:1rem;
+    height:1rem
+}
+
+.menu-container {
+    left:23px;
+    top:60px;
+    width:calc(100% - 46px);
+    -webkit-transform-origin:right top 0;
+    transform-origin:right top 0
+}
+
 header {
     position: relative;
     height: 640px;

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {{ .Hugo.Generator }}
+    <!-- {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }} -->
+    
+    {{ if .Site.IsServer }}
+        {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") | fingerprint }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}" data> 
+    {{ else }}
+        {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js")  | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ end }}
+    
+    <!-- <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title> -->
+    <title>foobar</title>
+</head>
