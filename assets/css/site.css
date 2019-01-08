@@ -1,0 +1,69 @@
+header {
+    position: relative;
+    height: 640px;
+    background-image: linear-gradient(config('colors.purple'), config('colors.purple-lighter'));
+}
+
+h1 {
+    padding: 100px 0;
+    font: 44px "Arial";
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+header svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
+    /* set height to pixels if you want angle to change with screen width */
+}
+
+.waves > use {
+    -webkit-animation: waveAround 60s linear infinite;
+            animation: waveAround 60s linear infinite;
+  }
+  .waves > use:nth-child(1) {
+    fill: config('colors.purple-lighter');
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+  }
+  .waves > use:nth-child(2) {
+    fill: config('colors.purple-lightest');
+    -webkit-animation-delay: -2s;
+            animation-delay: -2s;
+    -webkit-animation-duration: 25s;
+            animation-duration: 25s;
+  }
+  .waves > use:nth-child(3) {
+    fill: config('colors.white');
+    -webkit-animation-delay: -4s;
+            animation-delay: -4s;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+  }
+  
+  @-webkit-keyframes waveAround {
+    0% {
+      -webkit-transform: translate(-90px, 0%);
+              transform: translate(-90px, 0%);
+    }
+    100% {
+      -webkit-transform: translate(85px, 0%);
+              transform: translate(85px, 0%);
+    }
+  }
+  
+  @keyframes waveAround {
+    0% {
+      -webkit-transform: translate(-90px, 0%);
+              transform: translate(-90px, 0%);
+    }
+    100% {
+      -webkit-transform: translate(85px, 0%);
+              transform: translate(85px, 0%);
+    }
+  }
