@@ -1,0 +1,32 @@
+{
+  "name": "zacharycarter.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo --gc",
+    "dev": "hugo server -D --gc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharycarter/zacharycarter.github.io.git"
+  },
+  "keywords": [
+    "blog",
+    "resume"
+  ],
+  "author": "Zachary Carter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zacharycarter/zacharycarter.github.io/issues"
+  },
+  "homepage": "https://github.com/zacharycarter/zacharycarter.github.io#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "autoprefixer": "^9.4.4",
+    "postcss": "^7.0.7",
+    "postcss-cli": "^6.1.1",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^0.7.3"
+  }
+}
