@@ -1,7 +1,7 @@
 header {
     position: relative;
     height: 640px;
-    background-image: linear-gradient(config('colors.purple'), config('colors.purple-lighter'));
+    background-image: linear-gradient(config('colors.blue-dark'), config('colors.blue-light'));
 }
 
 .container {
@@ -25,19 +25,19 @@ header svg {
             animation: waveAround 60s linear infinite;
   }
   .waves > use:nth-child(1) {
-    fill: config('colors.purple-lighter');
+    fill: config('colors.blue-light');
     -webkit-animation-delay: -2s;
             animation-delay: -2s;
   }
   .waves > use:nth-child(2) {
-    fill: config('colors.purple-lightest');
+    fill: config('colors.blue-lighter');
     -webkit-animation-delay: -2s;
             animation-delay: -2s;
     -webkit-animation-duration: 25s;
             animation-duration: 25s;
   }
   .waves > use:nth-child(3) {
-    fill: config('colors.white');
+    fill: config('colors.blue-lightest');
     -webkit-animation-delay: -4s;
             animation-delay: -4s;
     -webkit-animation-duration: 15s;
