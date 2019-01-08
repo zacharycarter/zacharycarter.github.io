@@ -1,6 +1,5 @@
 header {
     position: relative;
-    height: 640px;
     background-image: linear-gradient(config('colors.blue-dark'), config('colors.blue-light'));
 }
 
