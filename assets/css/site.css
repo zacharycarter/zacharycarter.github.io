@@ -1,15 +1,15 @@
 header {
     position: relative;
-    background-image: linear-gradient(config('colors.blue-light'), config('colors.blue-dark'));
+    background-image: linear-gradient(config('colors.blue-dark'), config('colors.blue-light'));
+}
+
+footer {
+    background-image: linear-gradient(config('colors.blue'), config('colors.blue-darkest'));
 }
 
 #about, #projects, footer {
     position: relative;
     font-size: 0;
-}
-
-footer {
-    background-image: linear-gradient(config('colors.blue'), config('colors.blue-darkest'));
 }
 
 .container {
@@ -230,6 +230,8 @@ header svg {
     height: 10vw;
     position: absolute;
     top: 0;
+    mask-image: gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 @keyframes float {
