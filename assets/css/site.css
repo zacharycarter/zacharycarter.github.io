@@ -1,11 +1,15 @@
 header {
     position: relative;
-    background-image: linear-gradient(config('colors.blue-dark'), config('colors.blue-light'));
+    background-image: linear-gradient(config('colors.blue-light'), config('colors.blue-dark'));
 }
 
 #about, #projects, footer {
     position: relative;
     font-size: 0;
+}
+
+footer {
+    background-image: linear-gradient(config('colors.blue'), config('colors.blue-darkest'));
 }
 
 .container {
