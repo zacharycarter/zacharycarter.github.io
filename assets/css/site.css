@@ -4,7 +4,7 @@ header {
 }
 
 footer {
-    background-image: linear-gradient(config('colors.blue-dark'), config('colors.black'));
+    background-image: linear-gradient(config('colors.ocean-blue'), config('colors.indigo-darkest'));
 }
 
 #about, #projects, footer {
@@ -219,19 +219,6 @@ header svg {
 
 #footer-logo {
     animation: float 6s ease-in-out infinite;
-}
-
-#bubbles-container {
-    position: relative;
-}
-
-#footer-bubbles {
-    width: 100%;
-    height: 10vw;
-    position: absolute;
-    top: 0;
-    mask-image: gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 }
 
 @keyframes float {
