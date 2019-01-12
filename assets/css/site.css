@@ -1,6 +1,6 @@
 header {
     position: relative;
-    background-image: linear-gradient(config('colors.black'), config('colors.blue-dark'));
+    background-image: linear-gradient(config('colors.white'), config('colors.blue-dark'));
 }
 
 footer {
