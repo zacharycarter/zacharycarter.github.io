@@ -1,10 +1,10 @@
 header {
     position: relative;
-    background-image: linear-gradient(config('colors.blue-dark'), config('colors.blue-light'));
+    background-image: linear-gradient(config('colors.black'), config('colors.blue-dark'));
 }
 
 footer {
-    background-image: linear-gradient(config('colors.blue'), config('colors.blue-darkest'));
+    background-image: linear-gradient(config('colors.blue-dark'), config('colors.black'));
 }
 
 #about, #projects, footer {
@@ -34,7 +34,7 @@ footer {
     stroke: none;
 }
 .svg-inline--fa,svg:not(:root).svg-inline--fa {
-overflow:visible
+    overflow:visible;
 }
 .svg-inline--fa {
 display:inline-block;
