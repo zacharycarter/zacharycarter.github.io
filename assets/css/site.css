@@ -217,7 +217,7 @@ header svg {
     animation-duration: 15s;
 }
 
-#footer-logo {
+.footer-logo {
     animation: float 6s ease-in-out infinite;
 }
 
