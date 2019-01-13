@@ -7,6 +7,14 @@ footer {
     background-image: linear-gradient(config('colors.ocean-blue'), config('colors.indigo-darkest'));
 }
 
+#about {
+    background-image: linear-gradient(config('colors.blue-lightest'), config('colors.indigo-darkest'));
+}
+
+#projects {
+    background-image: linear-gradient(config('colors.indigo-darkest'), config('colors.blue-lightest'));
+}
+
 #about, #projects, footer {
     position: relative;
     font-size: 0;
