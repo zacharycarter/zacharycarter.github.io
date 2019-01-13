@@ -209,6 +209,7 @@ header svg {
 
 .waves > use {
     animation: waveAround 60s linear infinite;
+    animation-play-state: paused;
 }
 .waves > use:nth-child(1) {
     fill: config('colors.blue-light');
@@ -223,6 +224,10 @@ header svg {
     fill: config('colors.blue-lightest');
     animation-delay: -4s;
     animation-duration: 15s;
+}
+
+#waves:hover > .waves > use {
+    animation-play-state: running;              /* trigger on hover */
 }
 
 .footer-logo {
