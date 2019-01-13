@@ -15,7 +15,7 @@ footer {
     background-image: linear-gradient(config('colors.indigo-darkest'), config('colors.blue-lightest'));
 }
 
-#about, #projects, footer {
+#about, #projects {
     position: relative;
     font-size: 0;
 }
@@ -230,8 +230,13 @@ header svg {
     animation-play-state: running;              /* trigger on hover */
 }
 
+.animated:hover > .footer-logo {
+    animation-play-state: running;
+}
+
 .footer-logo {
     animation: float 6s ease-in-out infinite;
+    animation-play-state: paused;
 }
 
 @keyframes float {
