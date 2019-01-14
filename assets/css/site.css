@@ -226,7 +226,7 @@ header svg {
     animation-duration: 15s;
 }
 
-#waves:hover > .waves > use {
+header:hover > #waves > .waves > use {
     animation-play-state: running;              /* trigger on hover */
 }
 
